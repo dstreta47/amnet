@@ -9,6 +9,10 @@ def home():
 @app.route("/amnet")
 def amnet():
     return "Hello, amnet"
+
+@app.route("/aboutme")
+def aboutme():
+    return render_template("aboutme.html")
     
 if __name__ == "__main__":
     app.run(debug=True)
