@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
  <head>
+<style>  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 13%;
+  }</style>
    <meta charset="utf-8">
    <title>Flask Parent Template</title>
    <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  </head>
  <body>
-    <header>
-      <div class="container">
-        <h1 class="logo">First Web App</h1>
+    <header> 
+      <div class="jumbotron">
+        <h1 class="logo"></c>Amit Rana</h1>
+        <img src= "https://lafeber.com/pet-birds/wp-content/uploads/2018/06/Parakeet-300x300.jpg" class="center"></img>
         <strong><nav>
           <ul class="menu">
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('aboutme') }}">About</a></li>
+
           </ul>
         </nav></strong>
       </div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="https:www.google.com">Amit Rana</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="{{ url_for('sample1') }}">Sample1</a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('aboutme') }}">About</a></li>
+            <li><a href="{{ url_for('amnet') }}">amnet</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     
     {% block content %}
