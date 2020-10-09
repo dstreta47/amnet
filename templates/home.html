@@ -3,12 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>Amit Rana</title>
+    <!-- start of insert code-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Cover Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+    <!-- end of insert code-->
   </head>
   <body>
         {% extends "template.html" %}
         {% block content %} 
+
+
     <h1> Welcome to my home page
     </h1>
+    <!--start of extra code-->
+    <body class="text-center">
+
+      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+          <div class="inner">
+            <h3 class="masthead-brand">Amit Rana</h3>
+            <nav class="nav nav-masthead justify-content-center">
+              <a class="nav-link active" href="#">Artworks</a>
+              <a class="nav-link" href="#">Python Work</a>
+              <a class="nav-link" href="#">Social Links</a>
+            </nav>
+          </div>
+        </header>
+  
+        <main role="main" class="inner cover">
+          <p class="lead", style="font-family:Palatino-Linotype", size="2px"> I am a 2020 graduate of Bachelor of technology(Computer Science and Engineering) from Inderprastha Engineering College. I have an avid interest in AI and machine learning and have published 2 papers in the same. I am currently working at Funkfeets Pvt Ltd. as a web developer. Apart from my interest in web development and Machine learning I also have various hobbies such as plyaing the guitar, making 3d stuff and doing artwork.</p>
+          <p class="lead">
+            <a href="sample1.html" class="btn btn-lg btn-secondary">Know more about me</a>
+          </p>
+        </main>
+    <!--end of extra code-->
+    
     <p> This is my favourite qoute: "pen is mightier than the sword"</p>
         {% endblock %}
 </body>
