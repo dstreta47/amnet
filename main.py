@@ -17,6 +17,9 @@ def aboutme():
 @app.route("/sample1")
 def sample1():
     return render_template("sample1.html")
+@app.route("/artworks")
+def artworks():
+    return render_template("artworks.html")    
     
 if __name__ == "__main__":
     app.run(debug=True)

@@ -35,7 +35,7 @@
           <div class="inner">
             <h3 class="masthead-brand">Amit Rana</h3>
             <nav class="nav nav-masthead justify-content-center">
-              <a class="nav-link active" href="#">Artworks</a>
+              <a class="nav-link active" href="{{url_for('artworks')}}">Artworks</a>
               <a class="nav-link" href="#">Python Work</a>
               <a class="nav-link" href="#">Social Links</a>
             </nav>
@@ -45,7 +45,7 @@
         <main role="main" class="inner cover">
           <p class="lead", style="font-family:Palatino-Linotype", size="2px"> I am a 2020 graduate of Bachelor of technology(Computer Science and Engineering) from Inderprastha Engineering College. I have an avid interest in AI and machine learning and have published 2 papers in the same. I am currently working at Funkfeets Pvt Ltd. as a web developer. Apart from my interest in web development and Machine learning I also have various hobbies such as plyaing the guitar, making 3d stuff and doing artwork.</p>
           <p class="lead">
-            <a href="sample1.html" class="btn btn-lg btn-secondary">Know more about me</a>
+            <a href="{{ url_for('aboutme') }}" class="btn btn-lg btn-secondary">Know more about me</a>
           </p>
         </main>
     <!--end of extra code-->
